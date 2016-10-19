@@ -3,7 +3,127 @@ html
     head
         meta(charset="utf-8")
         title
-        link(href="#" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet")
         link(href="css/normalize.css" rel="stylesheet")
         link(href="css/style.css" rel="stylesheet")
     body
+        header.page-header
+            h1.visually-hidden Pink - взгляните на жизнь иначе
+            .page-header__logo
+                img(src="logo.svg" alt="Pink" width="180px" height="70px")
+            nav.main-nav.main-nav--closed
+                button.main-nav__toggle(type="button") Открыть меню
+                .main-nav__wrapper
+                    ul.main-nav__items
+                        li.main-nav__item.main-nav__item--active
+                            a Главная
+                        li.main-nav__item 
+                            a(href="#") Фотографии
+                        li.main-nav__item 
+                            a(href="#") Конкурс
+                        li.main-nav__item 
+                            a(href="#") HTML Academy
+        section.intro
+            h2.intro__title.visually-hidden Взгляните на жизнь иначе!
+            a.intro__download-link(href="#") Скачать приложение
+            a.intro__download-apple(href="#") 
+                img(src="img/apple.png" alt="apple")
+            a.intro__download-android(href="#") 
+                img(src="img/android.png" alt="android")
+            a.intro__download-windows(href="#") 
+                img(src="img/windows.png" alt="windows")
+            small.intro__legend Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        .information
+            p.information__queation Устали от серости мегаполиса?
+            p.information__answer Нам есть, что вам  предложить!
+            .information__wrapper.visually-hidden
+                img(src="img/gray-world.png")
+                h3.information__title Поднимает настроение
+                p.informatio__desc Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            .information__wrapper.visually-hidden
+                img(src="img/gray-world.png")
+                h3.information__title Меняет мир вокруг
+                p.informatio__desc Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            .information__wrapper
+                img(src="img/gray-world.png")
+                h3.information__title Заводит новых друзей
+                p.informatio__desc  Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+        section.diagram.visually-hidden
+            h2.diagram__title Эффект на 24 часа!
+            p.diagram_desc Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            a.diagram__original-href(href="#") Узнать больше об исследовании
+        section.rewiews
+            h2.visually-hidden Отзывы
+            img.rewiews__quotes.visually-hidden(src="img/quotes.png")
+            input.slider__input(type="radio" name="rewiews" id="rewiews-input-1" checked)
+            input.slider__input(type="radio" name="rewiews" id="rewiews-input-2")
+            input.slider__input(type="radio" name="rewiews" id="rewiews-input-3")
+            div.rewiews__items
+                blockquote.rewiews__item.slider__item.rewiews__item--1
+                    p Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                    cite.rewiews__autor-name Николай Петров
+                    p.rewiews__autor-information.visually-hidden 25 лет, водитель трамвая
+                button.rewiews__btn.rewiews__btn--prev.visually-hidden(type="button") Предыдущий отзыв
+                button.rewiews__btn.rewiews__btn--next.visually-hidden(type="button") Следующий отзыв
+            .rewiews-toggles.slider__toggles
+                label.slider-toggle(for="rewiews-input-1") 1
+                label.slider-toggle(for="rewiews-input-2") 2
+                label.slider-toggle(for="rewiews-input-3") 3
+        .price
+            input.slider__input(type="radio" name="price" id="price-input-1" checked)
+            input.slider__input(type="radio" name="price" id="price-input-2")
+            input.slider__input(type="radio" name="price" id="price-input-3")
+            table.price__items
+                tr
+                    td
+                    td.price__item #[b База] 1,99 USD
+                    td.price__item #[img.hit(src="img/hit.png")] #[b Стандарт] 3,99 USD
+                    td.price__item #[b Анлим] 9,99 USD
+                tr    
+                    td.price__item Розовый фильтр
+                    td.price__item #[img(src="img/yes.png")]
+                    td.price__item #[img(src="img/yes.png")]
+                    td.price__item #[img(src="img/yes.png")]
+                tr
+                    td.item Смайлики
+                    td.price__item #[img(src="img/no.png")]
+                    td.price__item #[img(src="img/yes.png")]
+                    td.price__item #[img(src="img/yes.png")]
+                tr 
+                    td.item Комментарии
+                    td.price__item #[img(src="img/no.png")]
+                    td.price__item #[img(src="img/no.png")]
+                    td.price__item #[img(src="img/yes.png")]
+        .contacts
+            h2.contacts__title Остались вопросы? Свяжитесь с нами!
+            .contacts__offers
+                b.contacts__offer Звоните:
+                a.contacts__phone(href="tel:+78125556666") +7(812)555-66-66
+            .contacts__offers
+                b.contacts__offer Приезжайте в гости:
+                a.contacts__address(href="#") ул. Большая  Конюшенная, 19/8
+            .contacts__offers
+                b.contacts__offer Пишите:
+                a.contacts__email(href="#") mail@htmlacademy.ru
+            img(src="img/map.png")
+        footer.page-footer
+            .page-footer__wrapper
+                p.page-footer__logo
+                    img(src="img/footer-logo.png")
+                p.page-footer__social
+                    span.social-links
+                        a.social-link.social-links-tw(href="#") Мы в Твитере!
+                        a.social-link.social-links-fb(href="#") Мы в Фейсбуке!
+                        a.social-link.social-links-pm(href="#") Мы в ПлэйМаркете!
+                p.footer-copyright Разработано #[a.page-footer__copyright-link(href="#") HTML Academy] 
+                    
+            
+            
+                
+            
+        
+        
+        
+            
+                        
+                            
