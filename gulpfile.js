@@ -37,7 +37,8 @@ gulp.task("serve", ["style"], function() {
     ui: false
   });
 
-  gulp.watch("less/**/*.less", ["style"]);
+  gulp.watch("less/*.less", ["style"]);
+  gulp.watch("less/*/*.less", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
   gulp.watch("pug/**/*.pug", ["pug"]);
 });

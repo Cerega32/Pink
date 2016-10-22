@@ -6,14 +6,16 @@ html
         link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet")
         link(href="css/normalize.css" rel="stylesheet")
         link(href="css/style.css" rel="stylesheet")
+        
     body
         header.page-header
             h1.visually-hidden Pink - взгляните на жизнь иначе
-            .page-header__logo
-                img(src="logo.svg" alt="Pink" width="180px" height="70px")
-            nav.main-nav.main-nav--closed
-                button.main-nav__toggle(type="button") Открыть меню
-                .main-nav__wrapper
+            .main-nav__wrapper
+                nav.main-nav.main-nav--closed.main-nav--nojs
+                    .page-header__logo
+                        a(href="#")
+                            img(src="img/logo-pink-white-mobile.svg" alt="Pink" width="75px" height="23px")
+                    button.main-nav__toggle(type="button") Открыть меню
                     ul.main-nav__items
                         li.main-nav__item.main-nav__item--active
                             a Главная
@@ -23,6 +25,8 @@ html
                             a(href="#") Конкурс
                         li.main-nav__item 
                             a(href="#") HTML Academy
+                        
+                        
         section.intro
             h2.intro__title.visually-hidden Взгляните на жизнь иначе!
             a.intro__download-link(href="#") Скачать приложение
@@ -116,9 +120,7 @@ html
                         a.social-link.social-links-fb(href="#") Мы в Фейсбуке!
                         a.social-link.social-links-pm(href="#") Мы в ПлэйМаркете!
                 p.footer-copyright Разработано #[a.page-footer__copyright-link(href="#") HTML Academy] 
-                    
-            
-            
+        script(src="js/script.js")
                 
             
         
