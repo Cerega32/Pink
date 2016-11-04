@@ -6,29 +6,17 @@
     }
 }
 
-.container() {
-    width: 280px;
-    margin: 0 auto;
-    
-    @media @tablet-widths {
-        width: 620px;
-    }
-    
-    @media @desktop-widths {
-        width: 940px;
-    }
-}
-
 .container-fluid() {
     width: auto;
+    min-width: 320px;
     @media @tablet-widths {
-        width: 89%;
-        max-width: 940px;
+        width: 100%;
+        max-width: 1200px;
         margin: 0 auto;
     }
     
     @media @desktop-widths {
-        width: 940px;
+        max-width: 2560px;
     }
 }
 

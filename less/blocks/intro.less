@@ -1,0 +1,130 @@
+.intro__header {
+    .container-fluid();
+    min-height: 462px;
+    background: url(../img/iphone-hand-mobile@1x.png) no-repeat 50% 100%, url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
+}
+
+.intro__title {
+    display: none;
+}
+
+.intro__download {
+    .container-fluid();
+    padding-top: 30px;
+    background: @color-darkblur;
+}
+
+.intro__download-link {
+    display: block;
+    
+    margin: 0 20px 32px;
+    padding: 16px 20px;
+    border: 3px solid #fff;
+    
+    border-radius: 30px;
+    
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.intro__download-link {
+    &:hover {
+        color: @color-pink;    
+        background: #fff;
+    }
+    
+    &:active {
+        color: @color-pink-active;        
+    }
+}
+
+.intro__download-app {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+        
+    margin-bottom: 25px;
+}
+
+.intro__download-apple, .intro__download-android {
+    margin-right: 35px;
+}
+
+.intro__legend {
+    margin: 0 45px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+@media @tablet-widths { 
+    .intro {
+        .container-fluid();
+        position: relative;
+    }
+    .intro__header {
+        min-height: 729px;
+        background: url(../img/iphone-hand-tablet@1x.png) no-repeat 50% 100%, url(../img/bg-back-tablet@1x.jpg) no-repeat 50% 0;
+    }
+    
+    .intro__title {
+        display: inline-block;
+        padding: 170px 80px;
+        width: 35%;
+        
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 400;
+    }
+    
+    .intro__download {
+        position: absolute;
+        left: 40px;
+        bottom: 120px;
+        width: 42%;
+        background: transparent;
+    }
+    
+    .intro__download-link, .intro__legend {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
+@media @desktop-widths { 
+    .intro__header {
+        min-height: 853px;
+        background: url(../img/iphone-hand-desktop@1x.png) no-repeat 50% 100%, url(../img/bg-back-desktop@1x.jpg) no-repeat 50% 0;
+    }
+    
+    .intro__title {
+        padding: 190px 210px;
+        width: 15%;
+        
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 400;
+    }
+    
+    .intro__download {
+        left: 130px;
+        bottom: 180px;
+        width: 25%;
+        background: transparent;
+    }
+    
+}

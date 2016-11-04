@@ -14,7 +14,7 @@ html
                 nav.main-nav.main-nav--closed.main-nav--nojs
                     .page-header__logo
                         a(href="#")
-                            img(src="img/logo-pink-white-mobile.svg" alt="Pink" width="75px" height="23px")
+                            img(src="img/logo-pink-white-mobile.svg" alt="Pink")
                     button.main-nav__toggle(type="button") Открыть меню
                     ul.main-nav__items
                         li.main-nav__item.main-nav__item--active
@@ -25,33 +25,36 @@ html
                             a(href="#") Конкурс
                         li.main-nav__item 
                             a(href="#") HTML Academy
-                        
-                        
         section.intro
-            h2.intro__title.visually-hidden Взгляните на жизнь иначе!
-            a.intro__download-link(href="#") Скачать приложение
-            a.intro__download-apple(href="#") 
-                img(src="img/apple.png" alt="apple")
-            a.intro__download-android(href="#") 
-                img(src="img/android.png" alt="android")
-            a.intro__download-windows(href="#") 
-                img(src="img/windows.png" alt="windows")
-            small.intro__legend Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            .intro__header
+                h2.intro__title Взгляните на жизнь иначе!
+            .intro__download 
+                a.intro__download-link(href="#") Скачать приложение
+                .intro__download-app
+                    a.intro__download-apple(href="#") 
+                        img(src="img/logo-apple.svg" alt="apple")
+                    a.intro__download-android(href="#") 
+                        img(src="img/logo-android.svg" alt="android")
+                    a.intro__download-windows(href="#") 
+                        img(src="img/logo-microsoft.svg" alt="windows")
+                p.intro__legend Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         .information
-            p.information__queation Устали от серости мегаполиса?
+            p.information__question Устали от серости мегаполиса?
             p.information__answer Нам есть, что вам  предложить!
-            .information__wrapper.visually-hidden
-                img(src="img/gray-world.png")
-                h3.information__title Поднимает настроение
-                p.informatio__desc Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            .information__wrapper.visually-hidden
-                img(src="img/gray-world.png")
-                h3.information__title Меняет мир вокруг
-                p.informatio__desc Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             .information__wrapper
-                img(src="img/gray-world.png")
-                h3.information__title Заводит новых друзей
-                p.informatio__desc  Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+                .information__plus.plus
+                    .plus__wrapper
+                        h3.information__title Поднимает настроение
+                        p.information__desc Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                    .plus__wrapper
+                        h3.information__title Меняет мир вокруг
+                        p.information__desc Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                    .plus__wrapper
+                        h3.information__title Заводит новых друзей
+                        p.information__desc  Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+                .information__image-gray
+                .information__image-pink
+                .information__image-hello
         section.diagram.visually-hidden
             h2.diagram__title Эффект на 24 часа!
             p.diagram_desc Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
