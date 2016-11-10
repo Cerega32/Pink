@@ -50,75 +50,72 @@
             <p class="information__desc"> Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
         </div>
-        <div class="information__image-gray"></div>
-        <div class="information__image-pink"></div>
-        <div class="information__image-hello"></div>
+        <div class="information__image-wrapper">
+          <div class="information__image-gray"></div>
+          <div class="information__image-pink"></div>
+          <div class="information__image-hello"></div>
+        </div>
       </div>
     </div>
-    <section class="diagram visually-hidden">
-      <h2 class="diagram__title">Эффект на 24 часа!</h2>
-      <p class="diagram_desc">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p><a class="diagram__original-href" href="#">Узнать больше об исследовании</a>
+    <section class="diagram">
+      <div class="diagram__timer">24</div>
+      <div class="diagram__wrapper">
+        <h2 class="diagram__title">Эффект <br> на 24 часа!</h2>
+        <p class="diagram__desc">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p><a class="diagram__original-href" href="#">Узнать больше об исследовании</a>
+      </div>
     </section>
     <section class="rewiews">
-      <h2 class="visually-hidden">Отзывы</h2><img class="rewiews__quotes visually-hidden" src="img/quotes.png">
-      <input class="slider__input" type="radio" name="rewiews" id="rewiews-input-1" checked>
-      <input class="slider__input" type="radio" name="rewiews" id="rewiews-input-2">
-      <input class="slider__input" type="radio" name="rewiews" id="rewiews-input-3">
+      <h2 class="visually-hidden">Отзывы</h2><img class="rewiews__quotes" src="img/icon-quotes.svg">
       <div class="rewiews__items">
         <blockquote class="rewiews__item slider__item rewiews__item--1">
-          <p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+          <p><span>"</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>"</span></p>
           <cite class="rewiews__autor-name">Николай Петров</cite>
-          <p class="rewiews__autor-information visually-hidden">25 лет, водитель трамвая</p>
+          <p class="rewiews__autor-information">25 лет, водитель трамвая</p>
         </blockquote>
-        <button class="rewiews__btn rewiews__btn--prev visually-hidden" type="button">Предыдущий отзыв</button>
-        <button class="rewiews__btn rewiews__btn--next visually-hidden" type="button">Следующий отзыв</button>
-      </div>
-      <div class="rewiews-toggles slider__toggles">
-        <label class="slider-toggle" for="rewiews-input-1">1</label>
-        <label class="slider-toggle" for="rewiews-input-2">2</label>
-        <label class="slider-toggle" for="rewiews-input-3">3</label>
+        <button class="rewiews__btn rewiews__btn--prev" type="button">Предыдущий отзыв</button>
+        <button class="rewiews__btn rewiews__btn--next" type="button">Следующий отзыв</button>
       </div>
     </section>
     <div class="price">
-      <input class="slider__input" type="radio" name="price" id="price-input-1" checked>
-      <input class="slider__input" type="radio" name="price" id="price-input-2">
-      <input class="slider__input" type="radio" name="price" id="price-input-3">
       <table class="price__items">
         <tr>
           <td></td>
           <td class="price__item"><b>База</b> 1,99 USD</td>
-          <td class="price__item"><img class="hit" src="img/hit.png"> <b>Стандарт</b> 3,99 USD</td>
+          <td class="price__item"><img class="hit" src="img/bg-hit.png"> <b>Стандарт</b> 3,99 USD</td>
           <td class="price__item"><b>Анлим</b> 9,99 USD</td>
         </tr>
         <tr>   
           <td class="price__item">Розовый фильтр</td>
-          <td class="price__item"><img src="img/yes.png"></td>
-          <td class="price__item"><img src="img/yes.png"></td>
-          <td class="price__item"><img src="img/yes.png"></td>
+          <td class="price__item"><img src="img/icon-yes.svg"></td>
+          <td class="price__item"><img src="img/icon-yes.svg"></td>
+          <td class="price__item"><img src="img/icon-yes.svg"></td>
         </tr>
         <tr>
           <td class="item">Смайлики</td>
-          <td class="price__item"><img src="img/no.png"></td>
-          <td class="price__item"><img src="img/yes.png"></td>
-          <td class="price__item"><img src="img/yes.png"></td>
+          <td class="price__item"><img src="img/icon-no.svg"></td>
+          <td class="price__item"><img src="img/icon-yes.svg"></td>
+          <td class="price__item"><img src="img/icon-yes.svg"></td>
         </tr>
         <tr> 
           <td class="item">Комментарии</td>
-          <td class="price__item"><img src="img/no.png"></td>
-          <td class="price__item"><img src="img/no.png"></td>
-          <td class="price__item"><img src="img/yes.png"></td>
+          <td class="price__item"><img src="img/icon-no.svg"></td>
+          <td class="price__item"><img src="img/icon-no.svg"></td>
+          <td class="price__item"><img src="img/icon-yes.svg"></td>
         </tr>
       </table>
     </div>
     <div class="contacts">
-      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-      <div class="contacts__offers"><b class="contacts__offer">Звоните:</b><a class="contacts__phone" href="tel:+78125556666">+7(812)555-66-66</a></div>
-      <div class="contacts__offers"><b class="contacts__offer">Приезжайте в гости:</b><a class="contacts__address" href="#">ул. Большая  Конюшенная, 19/8</a></div>
-      <div class="contacts__offers"><b class="contacts__offer">Пишите:</b><a class="contacts__email" href="#">mail@htmlacademy.ru</a></div><img src="img/map.png">
+      <h2 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
+      <div class="contacts__wrapper">
+        <div class="contacts__offers"><b class="contacts__offer">Звоните:</b><a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a></div>
+        <div class="contacts__offers contacts__address"><b class="contacts__offer">Приезжайте в гости:</b><a class="contacts__link" href="#">ул. Большая  Конюшенная, 19/8</a></div>
+        <div class="contacts__offers"><b class="contacts__offer">Пишите:</b><a class="contacts__link" href="#">mail@htmlacademy.ru</a></div>
+      </div>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6951962530793!2d30.320231516096925!3d59.93719978187568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fed3acb23%3A0xce54128f8838d988!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1478731095937" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen>></iframe>
     </div>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="page-footer__logo"><img src="img/footer-logo.png"></p>
+        <p class="page-footer__logo"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></p>
         <p class="page-footer__social"><span class="social-links"><a class="social-link social-links-tw" href="#">Мы в Твитере!</a><a class="social-link social-links-fb" href="#">Мы в Фейсбуке!</a><a class="social-link social-links-pm" href="#">Мы в ПлэйМаркете!</a></span></p>
         <p class="footer-copyright">Разработано <a class="page-footer__copyright-link" href="#">HTML Academy</a> </p>
       </div>

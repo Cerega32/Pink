@@ -1,0 +1,61 @@
+.rewiews__quotes {
+    display: none;
+}
+
+.rewiews__btn {
+    display: none;
+}
+
+.rewiews__autor-information {
+    display: none;
+}
+
+.rewiews__item {
+    display: flex;
+    flex-direction: column-reverse;
+    
+    text-align: center;
+    
+    font-size: 14px;
+    line-height: 30px;
+    
+}
+
+.rewiews__autor-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media @tablet-widths {
+    .rewiews__item {
+        flex-direction: column;
+    }
+    
+    .rewiews__autor-information {
+        display: inline;
+        font-size: 14px;
+        line-height: 30px;
+    }
+        
+}
+
+@media @desktop-widths {
+    .rewiews__item span{
+        display: none;
+    }    
+    
+    .rewiews__item {
+        margin: 0 auto;
+        width: 60%;
+    }
+    
+    .rewiews__quotes {
+        margin: 72px auto 30px;
+        
+        display: block;
+        fill: #e9e9e9;
+    }
+}
+

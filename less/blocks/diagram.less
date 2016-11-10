@@ -1,0 +1,77 @@
+.diagram {
+    .container-fluid();
+    
+    display: none;
+}
+
+@media @tablet-widths {
+    .diagram {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        padding: 58px 40px;
+    }
+     
+    .diagram__timer {
+        display: inline-block;
+        width: 108px;
+        height: 66px;
+        
+        background: url("../../img/icon-editor-diagram-fill.svg") no-repeat 22px 69px, url("../../img/icon-timer.svg") no-repeat 0 0;
+        
+        font-size: 96px;
+        line-height: 96px;
+        color: @color-pink;
+        font-weight: bold;
+        padding: 140px 95px;
+    }   
+    
+    .diagram__wrapper {
+        width: 44%;
+        
+    }
+        
+    .diagram__title {
+        display: inline-block;
+        
+        
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 50px;
+        
+        
+    }
+    
+    .diagram__desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .diagram__original-href {
+        font-size: 14px;
+        line-height: 24px;
+        color: @color-pink;
+        
+    }
+    
+}
+
+@media @desktop-widths {
+    .diagram {
+        padding: 58px 130px;
+        justify-content: flex-start;
+        background: #f2f2f2;
+    }
+     
+    .diagram__timer {
+        margin-right: 70px;    
+    }
+    
+    .diagram__title {
+        margin-top: 100px;
+    }
+     
+    .diagram__desc {
+        margin-bottom: 20px;
+    }
+}

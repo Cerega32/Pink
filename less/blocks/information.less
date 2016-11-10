@@ -93,3 +93,64 @@
         background: url(../../img/iphone-screen-3-tablet@1x.png) no-repeat;
     }
 }
+
+@media @desktop-widths {
+        
+    .information__wrapper {
+        padding: 0 130px;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .information__title {
+        padding: 50px 0 10px;
+    }
+    
+    
+    .information__plus {
+        width: 100%;
+        order: 2;
+        
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;   
+    }
+        
+    .plus__wrapper {
+        width: 24%;
+        text-align: center;
+    }
+    
+    .information__image-wrapper {
+        margin-top: -60px;
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: space-between;
+
+        width: 100%;
+    }
+    
+    .information__image-gray { 
+        margin: 0;
+        width: 24%;
+        height: 302px;
+        
+        background: url(../../img/iphone-screen-3-desktop@1x.png) no-repeat 50% 0;
+    }
+            
+    .information__image-pink {
+        margin: 0;
+        width: 24%;
+        height: 302px;
+
+        background: url(../../img/iphone-screen-2-desktop@1x.png) no-repeat 50% 0;
+    }
+    .information__image-hello {  
+        margin: 0;
+        width: 24%;
+        height: 302px;
+
+        background: url(../../img/iphone-screen-1-desktop@1x.png) no-repeat 50% 0;
+    }
+}
