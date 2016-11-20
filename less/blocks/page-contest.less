@@ -1,0 +1,284 @@
+.page-contest  {
+    .container-fluid();
+    box-sizing: border-box;
+}
+
+.page-form__desc {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.form__full-name-title,
+.form__contacts-title{
+    margin-left: 22px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    color: @color-pink;
+    
+}
+
+.form__full-name, .form__contacts {
+    padding: 0 20px;
+    margin: 0;
+    border: 0;
+}
+
+.form__full-name-item,
+.form__contacts-item{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    
+    padding: 15px 22px;
+    margin-bottom: 15px;
+    
+    border: 2px solid #e5e5e5;
+    
+    outline: none;
+    font-size: 18px;
+    line-height: 30px;
+    color: @color-darkblur;
+}
+
+.form__full-name-item:hover,
+.form__contacts-item:hover{
+    border: 2px solid @color-darkblur;
+}
+
+.form__full-name-item:focus,
+.form__contacts-item:focus{
+    border: 2px solid @color-pink;
+}
+
+.form__full-name :last-child, 
+.form__contacts :last-child {
+    margin-bottom: 43px;
+}
+
+::-webkit-input-placeholder {color:@color-darkblur;}
+::-moz-placeholder          {color:@color-darkblur;}/* Firefox 19+ */
+:-moz-placeholder           {color:@color-darkblur;}/* Firefox 18- */
+:-ms-input-placeholder      {color:@color-darkblur;}
+
+.form__achievements {
+    border: 0;
+    margin: 0 0 29px;
+    padding: 0 20px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+
+.form__achievements-str, 
+.form__os-str{
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.form__achievements-title,
+.form__os-title, 
+.form__desc-title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: @color-pink;    
+    text-align: center;
+    font-weight: 400;
+}
+
+.form__achievements-indicator {
+    position: relative;
+    margin-right: 30px;
+    
+    display: inline-block;    
+    width: 35px;
+    height: 35px;
+    
+    border: 2px solid #e5e5e5;    
+}
+
+.form__achievements-str:hover .form__achievements-indicator {
+    border: 2px solid @color-darkblur;    
+}
+.form__achievements-indicator:hover {
+    border: 2px solid @color-darkblur;    
+}
+
+.form__achievements-str:active .form__achievements-indicator {
+    border: 2px solid @color-pink;    
+}
+
+.form__achievements-checkbox:checked + .form__achievements-indicator::before, 
+.form__achievements-checkbox:checked + .form__achievements-indicator::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    
+    background: @color-pink;    
+}
+
+.form__achievements-checkbox:checked + .form__achievements-indicator::before {
+    top: 20px;
+    left: 6px;
+    
+    width: 9px;
+    transform: rotate(45deg);
+}
+
+.form__achievements-checkbox:checked + .form__achievements-indicator::after {
+    top: 16px;
+    left: 10px;
+    
+    width: 22px;
+    transform: rotate(-45deg);
+}
+
+.form__achievements-checkbox, 
+.form__os-radio {
+    display: none;
+}
+
+.form__achievements-name {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.form__os {
+    border: 0;
+    margin: 0 0 50px;
+    padding: 0 20px;
+    background: #f2f2f2;
+}
+
+.form__os-indicator {
+    position: relative;
+    margin-right: 30px;
+    
+    display: inline-block;    
+    width: 35px;
+    height: 35px;
+    
+    border: 2px solid #e5e5e5; 
+    background: #fff;
+    border-radius: 50%;
+}
+
+.form__os-str {
+    margin-bottom: 35px;
+}
+
+.form__os > :last-child {
+    margin-bottom: 42px;
+}
+
+.form__os-radio:checked + .form__os-indicator::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -7.5px;
+    margin-left: -7.5px;
+    
+    display: block;    
+    width: 15px;
+    height: 15px;
+    
+    background: @color-pink;
+    border-radius: 50%;
+}
+
+
+
+.form__os-str:hover .form__os-indicator{
+    border-color: @color-darkblur;
+}
+
+.form__os-str:active .form__os-indicator{
+    border-color: @color-pink;
+}
+
+.form__desc {
+    border: 0;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.form__desc-title {
+    margin-bottom: 15px;
+}
+
+.form__desc-item {
+    box-sizing: border-box;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    
+    padding: 15px 22px;
+    margin-bottom: 47px;
+    
+    border: 2px solid #e5e5e5;
+    
+    font-size: 18px;
+    line-height: 30px;
+    color: @color-darkblur;
+    resize: none;
+    outline: none;
+    
+    &:hover {
+        border-color: @color-darkblur;
+    }
+    
+    &:focus {
+        border-color: @color-pink;
+    }
+}
+
+.form__wrapper-submit {
+    padding: 0 20px;
+}
+
+.form__submit {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 17px 0;
+    border: 0;
+    border-radius: 2px;
+    margin-bottom: 35px;
+    
+    background: #2aab6d;
+    
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form__submit:hover {
+    background: #1c9b5e;
+}
+
+.form__star-pink {
+    color: @color-pink;
+}
+
+.form__required {
+    display: block;
+    margin-bottom: 30px; 
+    
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+

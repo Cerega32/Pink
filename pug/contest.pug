@@ -4,11 +4,8 @@ html
         meta(charset="utf-8")
         title
         link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet")
-        link(href="css/normalize.css" rel="stylesheet")
-        link(rel="stylesheet" href="slick/slick.css")
-        link(rel="stylesheet" href="slick/slick-theme.css")
         link(href="css/style.css" rel="stylesheet")
-    body
+    body.contest 
         svg(style='display:none', xmlns='http://www.w3.org/2000/svg')
             symbol#icon-facebook(viewbox='0 0 8.673 18.944')
                 path(d='M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z')
@@ -33,12 +30,6 @@ html
                 g
                     path(d='M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.861-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.288-1.288 1.288-.676 0-1.256-.58-1.256-1.288v-20.12zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.001zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.349c0 .676-.481 1.19-1.158 1.19h-.129c-.548 0-.935-.321-1.319-.772l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.676 0-1.223-.58-1.223-1.256V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.935 0 .676-.578 1.288-1.286 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.861v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z')
                 path(d='M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531-4.475 0-8.18-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531 4.475 0 8.18 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z')
-        svg(style='display:none', xmlns='http://www.w3.org/2000/svg')
-            symbol#icon-no(viewbox='0 0 26.752 26.752')
-                path(d='M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z')
-            symbol#icon-yes(viewbox='-82.357 4.875 21.698 16.09')
-                path(d='M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z')
-
         header.page-header
             h1.visually-hidden Pink - взгляните на жизнь иначе
             .main-nav__wrapper
@@ -71,133 +62,84 @@ html
                                         path.page-header__logo--desktop-point(fill='#D22856', d='M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z')
                     button.main-nav__toggle(type="button") Открыть меню
                     ul.main-nav__items
-                        li.main-nav__item.main-nav__item--active
-                            a Главная
+                        li.main-nav__item
+                            a(href="index.html") Главная
                         li.main-nav__item 
                             a(href="#") Фотографии
-                        li.main-nav__item 
-                            a(href="contest.html") Конкурс
+                        li.main-nav__item.main-nav__item--active 
+                            a Конкурс
                         li.main-nav__item 
                             a(href="#") HTML Academy
-        section.intro
-            .intro__header
-                h2.intro__title Взгляните на жизнь иначе!
-            .intro__download 
-                a.intro__download-link(href="#") Скачать приложение
-                .intro__download-app
-                    a.intro__download-apple(href="#") 
-                        img(src="img/logo-apple.svg" alt="apple")
-                    a.intro__download-android(href="#") 
-                        img(src="img/logo-android.svg" alt="android")
-                    a.intro__download-windows(href="#") 
-                        img(src="img/logo-microsoft.svg" alt="windows")
-                p.intro__legend Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        .information
-            p.information__question Устали от серости мегаполиса?
-            p.information__answer Нам есть, что вам  предложить!
-            .information__wrapper
-                .information__plus.plus
-                    .plus__wrapper
-                        h3.information__title Поднимает настроение
-                        p.information__desc Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-                    .plus__wrapper
-                        h3.information__title Меняет мир вокруг
-                        p.information__desc Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-                    .plus__wrapper
-                        h3.information__title Заводит новых друзей
-                        p.information__desc  Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-                .information__image-wrapper
-                    .information__image-gray
-                    .information__image-pink
-                    .information__image-hello
-        section.diagram
-            .diagram__timer 24
-            .diagram__wrapper
-                h2.diagram__title Эффект #[br] на 24 часа!
-                p.diagram__desc Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-                a.diagram__original-href(href="#") Узнать больше об исследовании
-        section.rewiews
-            h2.visually-hidden Отзывы
-            img.rewiews__quotes(src="img/icon-quotes.svg")
-            div.rewiews__items
-                .rewiews__slider
-                    .rewiews__item.slider__item.rewiews__item--1
-                        p #[span "]Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!#[span "]
-                        cite.rewiews__autor-name Николай Петров
-                        p.rewiews__autor-information 25 лет, водитель трамвая
-                .rewiews__slider
-                    .rewiews__item.slider__item.rewiews__item--2
-                        p #[span "]Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!#[span "]
-                        cite.rewiews__autor-name Николай Петров
-                        p.rewiews__autor-information 25 лет, водитель трамвая
-                .rewiews__slider
-                    .rewiews__item.slider__item.rewiews__item--2
-                        p #[span "]Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!#[span "]
-                        cite.rewiews__autor-name Николай Петров
-                        p.rewiews__autor-information 25 лет, водитель трамвая
-        .price
-            div.price__column-head
-                .price__item.price__item-head Розовый фильтр
-                .price__item.price__item-head Смайлики
-                .price__item.price__item-head Комментарии
-            div.price__items
-                div.price__column
-                    .price__item-title #[b База] #[br] 1,99 USD
-                    .price__item 
-                        span.price__item-desc Розовый фильтр  
-                        svg.price__item-img-yes(width="31px" height="21px")
-                            use(xlink:href='#icon-yes')
-                    .price__item 
-                        span.price__item-desc Смайлики  
-                        svg.price__item-img-no(width="27px" height="26px")
-                            use(xlink:href='#icon-no')
-                    .price__item 
-                        span.price__item-desc Комментарии 
-                        svg.price__item-img-no(width="27px" height="26px")
-                            use(xlink:href='#icon-no')
-                div.price__column
-                    .price__item-title #[img.price__hit-img(src="img/bg-hit.svg")] #[span.price__hit-insc ХИТ] #[b Стандарт] #[br] 3,99 USD
-                    .price__item 
-                        span.price__item-desc Розовый фильтр  
-                        svg.price__item-img-yes(width="31px" height="21px")
-                            use(xlink:href='#icon-yes')
-                    .price__item 
-                        span.price__item-desc Смайлики 
-                        svg.price__item-img-yes(width="31px" height="21px")
-                            use(xlink:href='#icon-yes')
-                    .price__item 
-                        span.price__item-desc Комментарии  
-                        svg.price__item-img-no(width="27px" height="26px")
-                            use(xlink:href='#icon-no')
-                div.price__column
-                    .price__item-title #[b Анлим] #[br] 9,99 USD
-                    .price__item 
-                        span.price__item-desc Розовый фильтр  
-                        svg.price__item-img-yes(width="31px" height="21px")
-                            use(xlink:href='#icon-yes')
-                    .price__item 
-                        span.price__item-desc Смайлики  
-                        svg.price__item-img-yes(width="31px" height="21px")
-                            use(xlink:href='#icon-yes')
-                    .price__item 
-                        span.price__item-desc Комментарии  
-                        svg.price__item-img-yes(width="31px" height="21px")
-                            use(xlink:href='#icon-yes')
-        .contacts
-            h2.contacts__title Остались вопросы? #[br] Свяжитесь с нами!
-            .contacts__wrapper
-                .contacts__offers
-                    b.contacts__offer Звоните:
-                    a.contacts__link(href="tel:+78125556666") +7(812)555-66-66
-                .contacts__offers.contacts__address
-                    b.contacts__offer Приезжайте в гости:
-                    a.contacts__link(href="#") ул. Большая  Конюшенная, 19/8
-                .contacts__offers
-                    b.contacts__offer Пишите:
-                    a.contacts__link(href="#") mail@htmlacademy.ru
-            
-            .contacts__map-wrapper
-                iframe.contacts__map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6951962530793!2d30.320231516096925!3d59.93719978187568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fed3acb23%3A0xce54128f8838d988!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI3LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1478731095937" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen>)
+                            
+                            
+                            
+                            
+        section.page-title.page-title--form
+            .page-title__wrapper
+                h2.page-title__header--form Конкурс на самое безбашенное путешествие с Пинк!         
+        section.page-contest    
+            p.page-form__desc Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту
+            form.page-contest__form.form
+                fieldset.form__full-name
+                    label.form__full-name-title(for="surname") Фамилия:
+                    input.form__full-name-item#surname(type="text" placeholder="Укажите фамилию")
+                    label.form__full-name-title(for="name") Имя:
+                    input.form__full-name-item#name(type="text" placeholder="Введите ваше имя" )
+                    label.form__full-name-title(for="patronymic") Отчество:
+                    input.form__full-name-item#patronymic(type="text" placeholder="Ну и отчество тоже")
+                fieldset.form__achievements
+                    h3.form__achievements-title Ваши безбашенные достижения в путешествии
+                    label.form__achievements-str(for="selfie-shark") 
+                        input.form__achievements-checkbox#selfie-shark(type="checkbox")
+                        span.form__achievements-indicator
+                        span.form__achievements-name Сделал селфи с акулой
+                    label.form__achievements-str(for="burned") 
+                        input.form__achievements-checkbox#burned(type="checkbox")
+                        span.form__achievements-indicator
+                        span.form__achievements-name Обгорел на пляже             
+                    label.form__achievements-str(for="chacknorris") 
+                        input.form__achievements-checkbox#chacknorris(type="checkbox")
+                        span.form__achievements-indicator
+                        span.form__achievements-name Видел Чака Норриса              
+                    label.form__achievements-str(for="souvenirs") 
+                        input.form__achievements-checkbox#souvenirs(type="checkbox")
+                        span.form__achievements-indicator
+                        span.form__achievements-name Накупил сувениров                    
+                    label.form__achievements-str(for="pinned-tower") 
+                        input.form__achievements-checkbox#pinned-tower(type="checkbox")
+                        span.form__achievements-indicator
+                        span.form__achievements-name Удержал башню
+                    label.form__achievements-str(for="hotel") 
+                        input.form__achievements-checkbox#hotel(type="checkbox")
+                        span.form__achievements-indicator
+                        span.form__achievements-name Разгромил отель
+                                     
+                fieldset.form__contacts
+                    label.form__contacts-title(for="number-phone") Номер телефончика
+                    input.form__contacts-item#number-phone(type="tel"  placeholder="Номер, пожалуйста")
+                    label.form__contacts-title(for="email") Адресок почты
+                    input.form__contacts-item#email(type="email" placeholder="E-mail, пожалуйста")
+                fieldset.form__os
+                    h3.form__os-title С каким приложением путешествовали?
+                    label.form__os-str(for="iOS")
+                        input.form__os-radio#iOS(type="radio" name="os" value="iOs")
+                        span.form__os-indicator
+                        span.form__os-name Pink для iOS
+                    label.form__os-str(for="Android")  
+                        input.form__os-radio#Android(type="radio" name="os" value="Android")
+                        span.form__os-indicator
+                        span.form__os-name Pink для Android
+                    label.form__os-str(for="Windows") 
+                        input.form__os-radio#Windows(type="radio" name="os" value="Windows")
+                        span.form__os-indicator
+                        span.form__os-name Windows Phone
+                fieldset.form__desc
+                    h3.form__desc-title Опишите свои эмоции
+                    textarea.form__desc-item(placeholder="Можно прям в красках, не стесняясь в выражениях")
+                .form__wrapper-submit
+                    button.form__submit(type="submit") Отправить форму
+                small.form__required #[span.form__star-pink *]-Обязательные поля
+                
         footer.page-footer
             .page-footer__wrapper
                 p.page-footer__logo
@@ -246,11 +188,7 @@ html
                     a.page-footer__copyright-link(href="#") HTML Academy 
                         svg.page-footer__copyright-svg#Layer_1(version='1.0', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='26.943px', height='34.09px', viewbox='0 0 26.943 34.09', enable-background='new 0 0 26.943 34.09', xml:space='preserve')
                             path(d='M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z')
-
-        script(src="http://yastatic.net/jquery/2.1.3/jquery.min.js")
-        script(src="js/script.js")
         script(src="js/header.js")
-        script(type="text/javascript" src="slick/slick.min.js")
                 
             
         
