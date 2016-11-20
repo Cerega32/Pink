@@ -81,12 +81,15 @@ html
             p.page-form__desc Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту
             form.page-contest__form.form
                 fieldset.form__full-name
-                    label.form__full-name-title(for="surname") Фамилия:
-                    input.form__full-name-item#surname(type="text" placeholder="Укажите фамилию")
-                    label.form__full-name-title(for="name") Имя:
-                    input.form__full-name-item#name(type="text" placeholder="Введите ваше имя" )
-                    label.form__full-name-title(for="patronymic") Отчество:
-                    input.form__full-name-item#patronymic(type="text" placeholder="Ну и отчество тоже")
+                    .form__full-name-str
+                        label.form__full-name-title(for="surname") Фамилия:
+                        input.form__full-name-item#surname(type="text" placeholder="Укажите фамилию")
+                    .form__full-name-str
+                        label.form__full-name-title(for="name") Имя:
+                        input.form__full-name-item#name(type="text" placeholder="Введите ваше имя" )
+                    .form__full-name-str
+                        label.form__full-name-title(for="patronymic") Отчество:
+                        input.form__full-name-item#patronymic(type="text" placeholder="Ну и отчество тоже")
                 fieldset.form__achievements
                     h3.form__achievements-title Ваши безбашенные достижения в путешествии
                     label.form__achievements-str(for="selfie-shark") 
@@ -115,10 +118,13 @@ html
                         span.form__achievements-name Разгромил отель
                                      
                 fieldset.form__contacts
-                    label.form__contacts-title(for="number-phone") Номер телефончика
-                    input.form__contacts-item#number-phone(type="tel"  placeholder="Номер, пожалуйста")
-                    label.form__contacts-title(for="email") Адресок почты
-                    input.form__contacts-item#email(type="email" placeholder="E-mail, пожалуйста")
+                    h3.form__contacts-title Контактная информация
+                    .form__contacts-str
+                        label.form__contacts-name(for="number-phone") Номер телефончика
+                        input.form__contacts-item#number-phone(type="tel"  placeholder="Номер, пожалуйста")
+                    .form__contacts-str
+                        label.form__contacts-name(for="email") Адресок почты
+                        input.form__contacts-item#email(type="email" placeholder="E-mail, пожалуйста")
                 fieldset.form__os
                     h3.form__os-title С каким приложением путешествовали?
                     label.form__os-str(for="iOS")
@@ -137,8 +143,8 @@ html
                     h3.form__desc-title Опишите свои эмоции
                     textarea.form__desc-item(placeholder="Можно прям в красках, не стесняясь в выражениях")
                 .form__wrapper-submit
-                    button.form__submit(type="submit") Отправить форму
-                small.form__required #[span.form__star-pink *]-Обязательные поля
+                    button.form__submit(type="submit" method="post") Отправить форму
+                    small.form__required #[span.form__star-pink *]-Обязательные поля
                 
         footer.page-footer
             .page-footer__wrapper

@@ -102,12 +102,18 @@
       <p class="page-form__desc">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
       <form class="page-contest__form form">
         <fieldset class="form__full-name">
-          <label class="form__full-name-title" for="surname">Фамилия:</label>
-          <input class="form__full-name-item" id="surname" type="text" placeholder="Укажите фамилию">
-          <label class="form__full-name-title" for="name">Имя:</label>
-          <input class="form__full-name-item" id="name" type="text" placeholder="Введите ваше имя">
-          <label class="form__full-name-title" for="patronymic">Отчество:</label>
-          <input class="form__full-name-item" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+          <div class="form__full-name-str">
+            <label class="form__full-name-title" for="surname">Фамилия:</label>
+            <input class="form__full-name-item" id="surname" type="text" placeholder="Укажите фамилию">
+          </div>
+          <div class="form__full-name-str">
+            <label class="form__full-name-title" for="name">Имя:</label>
+            <input class="form__full-name-item" id="name" type="text" placeholder="Введите ваше имя">
+          </div>
+          <div class="form__full-name-str">
+            <label class="form__full-name-title" for="patronymic">Отчество:</label>
+            <input class="form__full-name-item" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+          </div>
         </fieldset>
         <fieldset class="form__achievements">
           <h3 class="form__achievements-title">Ваши безбашенные достижения в путешествии</h3>
@@ -131,10 +137,15 @@
           </label>
         </fieldset>
         <fieldset class="form__contacts">
-          <label class="form__contacts-title" for="number-phone">Номер телефончика</label>
-          <input class="form__contacts-item" id="number-phone" type="tel" placeholder="Номер, пожалуйста">
-          <label class="form__contacts-title" for="email">Адресок почты</label>
-          <input class="form__contacts-item" id="email" type="email" placeholder="E-mail, пожалуйста">
+          <h3 class="form__contacts-title">Контактная информация</h3>
+          <div class="form__contacts-str">
+            <label class="form__contacts-name" for="number-phone">Номер телефончика</label>
+            <input class="form__contacts-item" id="number-phone" type="tel" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="form__contacts-str">
+            <label class="form__contacts-name" for="email">Адресок почты</label>
+            <input class="form__contacts-item" id="email" type="email" placeholder="E-mail, пожалуйста">
+          </div>
         </fieldset>
         <fieldset class="form__os">
           <h3 class="form__os-title">С каким приложением путешествовали?</h3>
@@ -153,8 +164,8 @@
           <textarea class="form__desc-item" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="form__wrapper-submit">
-          <button class="form__submit" type="submit">Отправить форму</button>
-        </div><small class="form__required"><span class="form__star-pink">*</span>-Обязательные поля</small>
+          <button class="form__submit" type="submit" method="post">Отправить форму</button><small class="form__required"><span class="form__star-pink">*</span>-Обязательные поля</small>
+        </div>
       </form>
     </section>
     <footer class="page-footer">
